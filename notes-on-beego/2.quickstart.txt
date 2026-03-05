@@ -1,0 +1,55 @@
+
+📦 You are creating a project
+🏷️ Giving it a name
+📥 Installing packages
+🧹 Cleaning up dependencies
+
+
+
+1. cd → enter project folder
+2. go mod init github.com/yourusername/go-beego → create project identity
+3. go get github.com/beego/beego/v2   → install external packages
+4. go mod tidy → clean & verify dependencies
+
+Create hello directory, cd hello directory
+mkdir hello
+cd hello
+>>>Init module
+>>>go mod init
+Download and install
+>>>go get github.com/beego/beego
+Create file hello.go
+package main
+
+import "github.com/beego/beego"
+
+func main(){
+    beego.Run()
+}
+Build and run
+go build hello.go
+./hello
+Go to http://localhost:8080
+Congratulations! You've just built your first beego app.
+
+
+
+🔄 Recommended Flow for Beego v2 Projects
+
+1.Initialize module:
+
+go mod init github.com/yourusername/hello
+
+2.Get Beego:
+
+go get github.com/beego/beego/v2
+
+3.Clean dependencies:
+
+go mod tidy
+
+4.Run your app:
+
+go run main.go
+
+Now everything should work.
